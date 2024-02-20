@@ -24,7 +24,7 @@ double Gcal;
 volatile int posiL = 0;
 volatile int posiR = 0;
 
-void setup(void) {
+void setup() {
   Serial.begin(9600);
   pinMode(ENCAL, INPUT);
   pinMode(ENCBL, INPUT);
