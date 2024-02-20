@@ -89,7 +89,8 @@ void forward(int speed, double dist) {
   while(d < dist) {
     sensors_event_t a, g, temp;
     mpu.getEvent(&a, &g, &temp);
-    /*G5 = G4;
+    /*Use this section if motors are not close together in speed normally. This will take averages instead of every value.
+    G5 = G4;
     G4 = G3;
     G3 = G2;
     G2 = G1;
